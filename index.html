@@ -16,14 +16,19 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First_Project</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <title>First_Project</title>
 </head>
 <body>
     <header class="header">
             <div class="divdiv container">
-                    <nav class="navup">
-                        <a href="./index.html" class="logo">WEB<span class="collog">Studio</span></a> 
+                <a href="./index.html" class="logo">WEB<span class="collog">Studio</span></a>
+                <button type="button" class="open-menu-btn">
+                    <svg width="24" height="24">
+                        <use href="./images/icon-menu.svg#icon-icon-menu"></use>
+                    </svg>
+                </button>
+                    <nav class="navup">  
                         <ul class="ulup menu">
                             <li><a href="./index.html" class="headstudio">Studio</a></li>
                             <li><a href="#portfolio" class="headstudio">Portfolio</a></li>
@@ -39,33 +44,29 @@
                                 </li>
                             </ul>
                 </address>
-                <button type="button" class="open-menu-btn">
-                    <svg width="24" height="24">
-                        <use href="./images/icon-menu.svg#icon-icon-menu"></use>
-                    </svg>
-                </button>
+                
             </div>
-            <!-- <div class="mob-menu">
+            <div class="mob-menu">
             <button type="button" class="close-menu-btn">
-                <svg width="8" height="8">
+                <svg class="close-pic" width="8" height="8">
                     <use href="images/crestt.svg#icon-crest"></use>
                 </svg>
             </button>
-            <nav>
+            
             <ul class="mob-menu-list">
                 <li class="mob-menu-item"><a href="./index.html" class="mob-headstudio studio">Studio</a></li>
                 <li class="mob-menu-item"><a href="#portfolio" class="mob-headstudio">Portfolio</a></li>
                 <li class="mob-menu-item"><a href="" class="mob-headstudio">Contacts</a></li>
             </ul>
-            </nav>
-            <address>
+            
+            
             <ul class="mob-ulupp">
+                <li class="mob-menu-contact"><a href="tel:+110001111111" class="mob-mailtel telephon">+11 (000) 111-11-11</a>
+                </li>
                 <li class="mob-menu-contact"><a href="mailto:info@devstudio.com" class="mob-mailtel">info@devstudio.com</a>
                 </li>
-                <li class="mob-menu-contact"><a href="tel:+110001111111" class="mob-mailtel">+11 (000) 111-11-11</a>
-                </li>
             </ul>
-            </address>
+            
             <ul class="mob-social-list">
                 <li class="mob-media-elem">
                     <a class="mob-media-icon" href="">
@@ -96,7 +97,7 @@
                     </a>
                 </li>
             </ul>
-            </div> -->
+            </div>
     </header>
     
     <div class="backdrop is-open">
@@ -120,38 +121,38 @@
             <h2 class="visually-hidden">Advantages</h2>
             <ul class="uladvant list">
                 <li class="item">
-                    <!-- <div class="item-info">
+                    <div class="item-info">
                         <svg width="64" height="64">
                             <use href="./images/newicons.svg#icon-antenna"></use>
                         </svg>
-                    </div> -->
+                    </div>
                     <h3 class="advant">Strategy</h3>
                     <p class="advantp">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
                 </li>
                 <li class="item">
-                    <!-- <div class="item-info">
+                    <div class="item-info">
                         <svg width="64" height="64">
                             <use href="./images/newicons.svg#icon-clock"></use>
                         </svg>
-                    </div> -->
+                    </div>
                     <h3 class="advant">Punctuality</h3>
                     <p class="advantp">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                 </li>
                 <li class="item">
-                    <!-- <div class="item-info">
+                    <div class="item-info">
                         <svg width="64" height="64">
                             <use href="./images/newicons.svg#icon-diagram"></use>
                         </svg>
-                    </div> -->
+                    </div>
                     <h3 class="advant">Diligence</h3>
                     <p class="advantp">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                 </li>
                 <li class="item">
-                    <!-- <div class="item-info">
+                    <div class="item-info">
                         <svg width="64" height="64">
                             <use href="./images/newicons.svg#icon-astronaut"></use>
                         </svg>
-                    </div> -->
+                    </div>
                     <h3 class="advant">Technologies</h3>
                     <p class="advantp">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
@@ -159,11 +160,14 @@
             </div>
         </section>
         <section class="ourteam">
-            <div class="container">
+            <div class="container ourteam-section">
             <h2 class="ourteamhead">Our Team</h2>
             <ul class="ulteam list">
-                <li class="item">
-                        <img class="imgblock" src="./images/1.jpg" width="264" alt="Mark Guerrero">    
+                <li class="team-cards">
+                        <img class="imgblock" srcset="./images/img1.jpg 1x, ./images/1.jpg 2x"
+                        src="./images/img1.jpg"
+                        width="264" height="260"
+                         alt="Mark Guerrero">    
                     <div class="team-member">
                         <h3 class="team-member-name">Mark Guerrero</h3>
                         <p class="team-member-role">Product Designer</p>
@@ -195,8 +199,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item">
-                    <img class="imgblock" src="./images/2.jpg" width="264" alt="Tom Ford">
+                <li class="team-cards">
+                    <img class="imgblock" srcset="./images/img2.jpg 1x, ./images/2.jpg 2x" src="./images/img2.jpg" width="264" height="260"
+                        alt="Tom Ford">
                     <div class="team-member">
                         <h3 class="team-member-name">Tom Ford</h3>
                         <p class="team-member-role">Frontend Developer</p>
@@ -228,8 +233,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item">
-                    <img class="imgblock" src="./images/3.jpg" width="264" alt="Camila Garcia">
+                <li class="team-cards">
+                    <img class="imgblock" srcset="./images/img3.jpg 1x, ./images/3.jpg 2x" src="./images/img3.jpg" width="264" height="260"
+                        alt="Camila Garcia">
                     <div class="team-member">
                         <h3 class="team-member-name">Camila Garcia</h3>
                         <p class="team-member-role">Marketing</p>
@@ -261,8 +267,9 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item">
-                    <img class="imgblock" src="./images/4.jpg" width="264" alt="Daniel Wilson">
+                <li class="team-cards">
+                    <img class="imgblock" srcset="./images/img4.jpg 1x, ./images/4.jpg 2x" src="./images/img4.jpg" width="264" height="260"
+                        alt="Daniel Wilson">
                     <div class="team-member">
                         <h3 class="team-member-name">Daniel Wilson</h3>
                         <p class="team-member-role">UI Designer</p>
@@ -303,7 +310,12 @@
             <ul class="ulport">
                 <li class="bankapp">
                     <div class="card-port">
+                        <picture>
+                            <source
+                            media="(min-width: 1188px)"
+                            srcset="./images/cardmin1.jpg 1x, ./images/card1.jpg 2x" />
                         <img class="imgblock" src="./images/card1.jpg" alt="card1" width="360"/>
+                        </picture>
                         <p class="cardp">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                         Cloud Storage App</p>
                     </div>
