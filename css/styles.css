@@ -1393,13 +1393,14 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .centrecolor {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/tablbg.jpg);
     }
+    
   }
   .centretext {
     font-size: 56px;
@@ -1478,7 +1479,187 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         column-gap: 0;
         width: 584px;
   }
+  .logoend {
+    margin-bottom: 16px;
+        align-self: start;
+  }
+  .endp {
+    width: 264px;
+  }
+  .social-media-container {
+    margin-right: 80px;
+  }
+  .footer-media {
+    text-align: left;
+  }
+  .footer-list {
+    margin-left: 0;
+  }
+  .footer-form {
+    width: 453px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+  }
+  .footer-form-title {
+    align-self: start;
+  }
+  .footer-action {
+    flex-direction: row;
+        gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+        height: 40px;
+        padding-left: 16px;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #fff;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        background-color: transparent;
+        outline: none;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-form-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+   /* TABLET MODAL */
+   .modal-div-window {
+    width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .modal-div-button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .modal-div-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .modal-form {
+    width: 360px;
+   }
+   .modal-label-input:focus-within {
+    border-color: #4d5ae5;
+   }
+   .modal-label-input:focus-within + .modal-input-icon {
+    fill: #4d5ae5;
+   }
+   .span-privacy {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .form-checkbox-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 }
+
+/* DESKTOP */
+
+@media (min-width: 1158px) {
+    .mob-menu {
+            display: none;
+    }
+   .ourteam-section {
+    width: auto;
+   }
+   .container {
+    max-width: 1158px;
+        padding: 0 15px 0;
+   }
+   .divdiv {
+    justify-content: center;
+   }
+   .logo {
+    margin-right: 76px;
+   }
+   .open-menu-btn {
+    display: none;
+   }
+   .navup {
+    display: flex;
+   }
+   .add {
+    display: inline;
+        font-style: normal;
+   }
+   .ulup {
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 40px;
+        margin-right: 332px;
+   }
+   .headstudio {
+    font-weight: 500;
+        line-height: 1.5;
+        color: #2e2f42;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .headstudio:hover,
+   .headstudio:focus {
+    color: #404bbf;
+   }
+   .decor {
+    position: relative;
+        color: #404bbf;
+   }
+   .decor::after {
+    display: block;
+        content: '';
+        position: absolute;
+        border-radius: 2px;
+        width: 48px;
+        height: 4px;
+        border: 2px solid #404bbf;
+        background-color: #404bbf;
+        bottom: -1px;
+   }
+   .ulupp {
+    display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 40px;
+   }
+   .mailtel {
+    line-height: 1.5;
+        color: #434455;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .mailtel:hover,
+   .mailtel:focus {
+    color: #404bbf;
+   }
+   .advantages {
+    padding-top: 120px;
+        padding-bottom: 120px;
+   }
+   .secfoot {
+    padding-top: 120px;
+        padding-bottom: 120px;
+   }
+   .centrecolor {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people2.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+   }
+
+}   
+ 
+
 
 
 
