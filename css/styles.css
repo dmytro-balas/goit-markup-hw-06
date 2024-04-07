@@ -84,13 +84,19 @@ p {
     background-color: #fff;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1); */
-    width: 24px;
-  height: 24px;
-  position: relative;
-  background-color: #e7e9fc;
-  border: none;
-  cursor: pointer;
-  background-color: #fff;
+    border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
 }
 
 .close-pic {
@@ -430,6 +436,10 @@ p {
     /* background-color: #F4F4FD;
     padding: 120px 0; */
     background-color: #f4f4fd;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 .ourteam-section {
     width: 296px;
